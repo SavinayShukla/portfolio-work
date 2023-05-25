@@ -5,18 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         tailwind.config = {
             theme: {
                 fontFamily: {
-                    // 'sans': ['ui-sans-serif', 'system-ui'],
+                    'sans': ["'Inter'"],
                     'mono': [Menlo],
                 }
             }
         }
     </script>
-    <title>Savinay's Website</title>
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @supports (font-variation-settings: normal) {
+            :root {
+                font-family: 'Inter var', sans-serif;
+            }
+        }
+    </style>
+    <title>It's Savinay</title>
 </head>
 
 <body class="bg-gray-950 leading-relaxed text-gray-400 antialiased selection:bg-blue-300 selection:text-blue-950">
@@ -26,8 +40,7 @@
                 <div>
                     <h3 class="antialiased font-mono text-blue-300">Hi! My name is <br></h3>
                     <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Savinay Shukla</h1>
-                    <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Graduate Student @ NYU
-                    </h2>
+                    <h2 id="element" class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"></h2>
                     <p class="mt-4 max-w-xs leading-normal">“Study hard what interests you the most in the most
                         undisciplined, irreverent and original manner possible.”
                         <br>― Richard Feynmann
@@ -332,7 +345,8 @@
                                         <p class="mt-2 text-sm leading-normal">Responsible for the development and
                                             deployment of API improvements primarily focused on application migration.
                                             Collaborated with multiple development teams to deliver fast and robust
-                                            solution prototypes. Awarded <b>“IBM Gold Champion Learner - 2020”</b> recognition
+                                            solution prototypes. Awarded <b>“IBM Gold Champion Learner - 2020”</b>
+                                            recognition
                                             for a continuous learning initiative.
                                         </p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
@@ -420,8 +434,10 @@
                                                 <div class="text-slate-500">Pune, India</div>
                                             </div>
                                         </h3>
-                                        <p class="mt-2 text-sm leading-normal">Coordinated research on prior implementations of time-series analysis on stock market data.
-                                            Engineered modules and macros to automate technical analysis of stock market indices.
+                                        <p class="mt-2 text-sm leading-normal">Coordinated research on prior
+                                            implementations of time-series analysis on stock market data.
+                                            Engineered modules and macros to automate technical analysis of stock market
+                                            indices.
                                         </p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-4"><a
@@ -521,7 +537,7 @@
                                     </div>
                                     <div class="z-10 sm:order-2 sm:col-span-6">
                                         <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
-                                                href="https://www.newline.co/courses/build-a-spotify-connected-app"
+                                                href="https://github.com/SavinayShukla/Distributed-Dual-Discriminator-GANs"
                                                 target="_blank" rel="noreferrer"
                                                 aria-label="Build a Spotify Connected App"><span
                                                     class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Distributed
@@ -534,22 +550,41 @@
                                                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                                                 clip-rule="evenodd"></path>
                                                         </svg></span></span></a></h3>
-                                        <p class="mt-2 text-sm leading-normal">Proposed to add another discriminator in
+                                        <p class="mt-2 text-sm leading-normal">
+                                            Proposed to add <b>another</b> discriminator in
                                             a typical DCGAN training pipeline for the Generator to acheive better and
-                                            faster convergence.
-                                            Adding another discriminator will force the Generator to fool two
-                                            discriminators at once, and disallow the dominance of Discriminator
-                                            training.
-                                            Results are based on implementing our improvised training pipeline across
-                                            various datasets which include CIFAR-10, CIFAR-100, MNIST and SVHN.
-                                            Benchmarked our performance on various datasets to know possible limitations
-                                            and improvements across a diverse set of images.</p>
-                                    </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
+                                            faster convergence. Achieved a <b>40% speedup</b> in time to achieve optimal FID and IS Scores across
+                                            various datasets which include <strong>CIFAR-10, CIFAR-100, MNIST and SVHN.</strong>
+                                            <br><br>Additionally, extended this implementation on a <b>distributed</b> setting using a Pytorch's DDP to know possible limitations and bottlenecks.</p>
+                                        <ul class="mt-2 flex flex-wrap">
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Generative Models</div>
+                                            </li>
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Pytorch</div>
+                                            </li>
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Distributed Data Parallel</div>
+                                            </li>
+                                        </ul>
+                                        <!-- </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
                                         class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                         style="color:transparent"
-                                        srcset="/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&amp;w=640&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&amp;w=640&amp;q=75">
+                                        src="assets/nlp.png">
+                                    
+                                </div> -->
+                                    </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
+                                        data-nimg="1"
+                                        class="rounded transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        style="color:transparent" src="assets/D2.gif">
+
                                 </div>
                             </li>
                             <li class="mb-12">
@@ -572,49 +607,44 @@
                                                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                                                 clip-rule="evenodd"></path>
                                                         </svg></span></span></a></h3>
-                                        <p class="mt-2 text-sm leading-normal">we propose a lightweight ResNet model
+                                        <p class="mt-2 text-sm leading-normal">A <b>Lightweight ResNet-18</b> implementation
                                             that has less than 5 million trainable parameters as opposed to the original
-                                            implementation of ResNet-18, which had around 11 million parameters. Through
-                                            hyper-parameter tuning and data augmnetation techniques, our architecture
-                                            achieves an accuracy of 92.17% when trained on the CIFAR-10 dataset.
-                                            Squeeze-Res is a python implementation of different Res Architecture.</p><a
+                                            implementation with 11 million parameters. Leverages channel-wise attention mechanism called <b>Squeeze and Excitement</b><br><br>
+                                            Model achieves an accuracy of <b>92.17% within 70 epochs</b> on CIFAR-10.</p>
+                                        <a
                                             class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300"
                                             href="https://github.com/bchiang7/spotify-profile" target="_blank"
-                                            rel="noreferrer" aria-label="544 stars on GitHub"><svg
+                                            rel="noreferrer" aria-label="544 stars on GitHub">
+                                            <!-- <svg
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                 fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
                                                 <path fill-rule="evenodd"
                                                     d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
                                                     clip-rule="evenodd"></path>
-                                            </svg><span>544</span></a>
+                                            </svg><span>544</span> -->
+                                        </a>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    React</div>
+                                                    Pytorch</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    Express</div>
+                                                    ResNets</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    Spotify API</div>
-                                            </li>
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    Heroku</div>
+                                                    Attention Mechanisms</div>
                                             </li>
                                         </ul>
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
                                         class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                         style="color:transparent"
-                                        srcset="/_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&amp;w=640&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&amp;w=640&amp;q=75">
+                                        src="assets/resnet.gif">
                                 </div>
                             </li>
                             <li class="mb-12">
@@ -656,30 +686,29 @@
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    React</div>
+                                                    Pytorch</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    Express</div>
+                                                    CNNs</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    Spotify API</div>
+                                                    Depth-wise Seperable</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    Heroku</div>
+                                                    DehazeNets</div>
                                             </li>
                                         </ul>
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
                                         class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                         style="color:transparent"
-                                        srcset="/_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&amp;w=640&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fprojects%2Fspotify-profile.png&amp;w=640&amp;q=75">
+                                        src="assets/depthwise.gif">
                                 </div>
                             </li>
                             <li class="mb-12">
@@ -692,10 +721,66 @@
                                         <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
                                                 href="https://v4.brittanychiang.com/" target="_blank" rel="noreferrer"
                                                 aria-label="brittanychiang.com (v4)"><span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>brittanychiang.com<!-- -->
-                                                    <span class="inline-block">(v4)<svg
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                            fill="currentColor"
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>DataViz
+                                                    - Java Visualization Toolkit<!-- -->
+                                                    <span class="inline-block"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 20 20" fill="currentColor"
+                                                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                            aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg></span></span></a></h3>
+                                        <p class="mt-2 text-sm leading-normal">An attempt to visualize data using
+                                            JavaFX. Developed a microservice based application.</p><a
+                                            class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300"
+                                            href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer"
+                                            aria-label="6260 stars on GitHub"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor" class="mr-1 h-3 w-3"
+                                                aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg><span>6,260</span></a>
+                                        <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Gatsby</div>
+                                            </li>
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Styled Components</div>
+                                            </li>
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Netlify</div>
+                                            </li>
+                                        </ul>
+                                    </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
+                                        data-nimg="1"
+                                        class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        style="color:transparent"
+                                        srcset="/_next/image?url=%2Fimages%2Fprojects%2Fv4.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fprojects%2Fv4.png&amp;w=640&amp;q=75 2x"
+                                        src="/_next/image?url=%2Fimages%2Fprojects%2Fv4.png&amp;w=640&amp;q=75">
+                                </div>
+                            </li>
+                            <li class="mb-12">
+                                <div
+                                    class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                    <div
+                                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                    </div>
+                                    <div class="z-10 sm:order-2 sm:col-span-6">
+                                        <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
+                                                href="https://v4.brittanychiang.com/" target="_blank" rel="noreferrer"
+                                                aria-label="brittanychiang.com (v4)"><span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>C-Match
+                                                    - Real-Time Match Tracking<!-- -->
+                                                    <span class="inline-block"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 20 20" fill="currentColor"
                                                             class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
                                                             aria-hidden="true">
                                                             <path fill-rule="evenodd"
@@ -778,5 +863,17 @@
         </div>
     </div>
 </body>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Graduate Student @ NYU',
+            'Loves to Cook!',
+            "Installed my first OS at age 8!",
+            "Do you like pizza?"],
+        typeSpeed: 50,
+        loop: true,
+        backSpeed: 60,
+        backDelay: 1000,
+    });
+</script>
 
 </html>
