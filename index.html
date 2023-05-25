@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    // 'sans': ['ui-sans-serif', 'system-ui'],
+                    'mono': [Menlo],
+                }
+            }
+        }
+    </script>
     <title>Savinay's Website</title>
 </head>
 
@@ -14,9 +24,14 @@
         <div class="lg:flex lg:justify-between lg:gap-4">
             <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
                 <div>
+                    <h3 class="antialiased font-mono text-blue-300">Hi! My name is <br></h3>
                     <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Savinay Shukla</h1>
-                    <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">At your service</h2>
-                    <p class="mt-4 max-w-xs leading-normal">This means this is a paragraph</p>
+                    <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Graduate Student @ NYU
+                    </h2>
+                    <p class="mt-4 max-w-xs leading-normal">“Study hard what interests you the most in the most
+                        undisciplined, irreverent and original manner possible.”
+                        <br>― Richard Feynmann
+                    </p>
                     <nav class="nav hidden lg:block">
                         <ul class="mt-16 w-max">
                             <li>
@@ -117,7 +132,8 @@
                                 rel="noreferrer">online video course</a>that covers everything you need to know
                             to build a web app with the Spotify API.</p> -->
                         <p class="mb-4">
-                            My journey into the world of technology began at a young age when, at just 8 years old,
+                            My journey into the world of technology began at a young age when, <b>at just 8 years
+                                old,</b>
                             I experienced the thrill of independently installing my first operating system.
                             This early fascination ignited a deep passion within me for computers and their endless
                             possibilities.
@@ -125,17 +141,17 @@
                             installation laid the groundwork for a lifelong dedication to the field.
                         </p>
                         <p class="mb-4">
-                            As I continued to explore the domains of software and drivers,
-                            I quickly realized that my passion for computers was not limited to mere curiosity.
                             From disassembling computers to constructing complex deep learning applications,
                             my expertise and knowledge grew exponentially.
                             Time seemed to fly by, and now, in the year 2023,
                             I find myself in the bustling city of New York, driven to expand my skill set and knowledge
                             even further.
-                            Currently, I am pursuing a master's degree at NYU, immersing myself in advanced technologies
+                            Currently, I am pursuing a <b>Master's degree at NYU in Computer Engineering</b>, immersing
+                            myself in advanced technologies
                             and embracing the challenges and opportunities that lie ahead.
                         </p>
                     </div>
+
                 </section>
                 <section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                     <div
@@ -167,11 +183,64 @@
                                                 <div class="text-slate-500">New York University, New York City</div>
                                             </div>
                                         </h3>
-                                        <p class="mt-2 text-sm leading-normal">Deliver high-quality, robust production
-                                            code for a diverse array of projects for clients including Harvard Business
-                                            School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt
-                                            University, The 19th News, and more. Provide leadership within engineering
-                                            department through close collaboration, knowledge shares, and mentorship.
+                                        <p class="mt-2 text-sm leading-normal">As a lab section leader for the DS-UA
+                                            301: Advanced Data Science course under the guidance of Professor Parijat
+                                            Dube, I
+                                            assumed the crucial responsibility of conducting practical lab sessions.
+                                            I guided students in the implementation of
+                                            Machine Learning frameworks like Scikit-Learn, Keras, and Pytorch, ensuring
+                                            their understanding and practical application of these tools.
+                                        </p>
+                                        <ul class="mt-2 flex flex-wrap">
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Python</div>
+                                            </li>
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Keras</div>
+                                            </li>
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Scikit-Learn</div>
+                                            </li>
+                                            <li class="mr-1.5 mt-2">
+                                                <div
+                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                                                    Pytorch</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-12">
+                                <div
+                                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                    <div
+                                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                    </div>
+                                    <header
+                                        class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                                        July — Dec 2017</header>
+                                    <div class="z-10 sm:col-span-6">
+                                        <h3 class="font-medium leading-snug text-slate-200 hover:text-blue-300">
+                                            <div><span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Course
+                                                    Assistant · <span class="inline-block">New York
+                                                        University</span></span></div>
+                                            <div>
+                                                <div class="text-slate-500">Graduate Course Assistant</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-slate-500">New York University, Brooklyn.</div>
+                                            </div>
+                                        </h3>
+                                        <p class="mt-2 text-sm leading-normal">I assisted Silver Professor David J. Pine
+                                            in curating course content for his course of Computation Chemistry in the
+                                            Chemical and Biomolecular Engineering School of NYU Tandon.
                                         </p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-4"><a
@@ -218,128 +287,22 @@
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    React</div>
+                                                    Computational Chemistry</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    React Native</div>
+                                                    Python</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    SCSS</div>
+                                                    Numpy</div>
                                             </li>
                                             <li class="mr-1.5 mt-2">
                                                 <div
                                                     class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    WordPress</div>
-                                            </li>
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    JavaScript</div>
-                                            </li>
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    TypeScript</div>
-                                            </li>
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    PHP</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-12">
-                                <div
-                                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div
-                                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                                    </div>
-                                    <header
-                                        class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-                                        July — Dec 2017</header>
-                                    <div class="z-10 sm:col-span-6">
-                                        <h3 class="font-medium leading-snug text-slate-200 hover:text-blue-300">
-                                            <div><span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Course
-                                                    Assistant · <span class="inline-block">New York
-                                                        University</span></span></div>
-                                            <div>
-                                                <div class="text-slate-500">Graduate Course Assistant</div>
-                                            </div>
-                                            <div>
-                                                <div class="text-slate-500">New York University, Brooklyn.</div>
-                                            </div>
-                                        </h3>
-                                        <p class="mt-2 text-sm leading-normal">Developed and styled interactive web apps
-                                            for Apple Music, including the UI of Apple Music’s embeddable web player
-                                            widget for in-browser user authorization and full song playback.</p>
-                                        <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
-                                            <li class="mr-4"><a
-                                                    class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300"
-                                                    href="https://developer.apple.com/documentation/musickitjs"
-                                                    target="_blank" rel="noreferrer"><svg
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                        fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                        <path
-                                                            d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                        </path>
-                                                        <path
-                                                            d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                        </path>
-                                                    </svg><span>MusicKit.js</span></a></li>
-                                            <li class="mr-4"><a
-                                                    class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-green-300"
-                                                    href="https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/"
-                                                    target="_blank" rel="noreferrer"><svg
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                        fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                        <path
-                                                            d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                        </path>
-                                                        <path
-                                                            d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                        </path>
-                                                    </svg><span>9to5Mac</span></a></li>
-                                            <li class="mr-4"><a
-                                                    class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300"
-                                                    href="https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming"
-                                                    target="_blank" rel="noreferrer"><svg
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                        fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                        <path
-                                                            d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z">
-                                                        </path>
-                                                        <path
-                                                            d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z">
-                                                        </path>
-                                                    </svg><span>The Verge</span></a></li>
-                                        </ul>
-                                        <ul class="mt-2 flex flex-wrap">
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    Ember</div>
-                                            </li>
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    SCSS</div>
-                                            </li>
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    JavaScript</div>
-                                            </li>
-                                            <li class="mr-1.5 mt-2">
-                                                <div
-                                                    class="flex items-center rounded-full bg-blue-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
-                                                    MusicKit.js</div>
+                                                    Numba</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -366,9 +329,12 @@
                                                 <div class="text-slate-500">Bangalore, India</div>
                                             </div>
                                         </h3>
-                                        <p class="mt-2 text-sm leading-normal">Developed and styled interactive web apps
-                                            for Apple Music, including the UI of Apple Music’s embeddable web player
-                                            widget for in-browser user authorization and full song playback.</p>
+                                        <p class="mt-2 text-sm leading-normal">Responsible for the development and
+                                            deployment of API improvements primarily focused on application migration.
+                                            Collaborated with multiple development teams to deliver fast and robust
+                                            solution prototypes. Awarded <b>“IBM Gold Champion Learner - 2020”</b> recognition
+                                            for a continuous learning initiative.
+                                        </p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-4"><a
                                                     class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300"
@@ -454,9 +420,9 @@
                                                 <div class="text-slate-500">Pune, India</div>
                                             </div>
                                         </h3>
-                                        <p class="mt-2 text-sm leading-normal">Developed and styled interactive web apps
-                                            for Apple Music, including the UI of Apple Music’s embeddable web player
-                                            widget for in-browser user authorization and full song playback.</p>
+                                        <p class="mt-2 text-sm leading-normal">Coordinated research on prior implementations of time-series analysis on stock market data.
+                                            Engineered modules and macros to automate technical analysis of stock market indices.
+                                        </p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-4"><a
                                                     class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-blue-300 focus-visible:text-blue-300"
@@ -539,6 +505,7 @@
                                         </svg></span></span></a></div>
                     </div>
                 </section>
+
                 <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                     <div
                         class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -660,7 +627,8 @@
                                         <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
                                                 href="https://spotify-profile.herokuapp.com/" target="_blank"
                                                 rel="noreferrer" aria-label="Spotify Profile"><span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>ClearView - Depth-wise Seperable CNNs<span class="inline-block"><svg
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>ClearView
+                                                    - Depth-wise Seperable CNNs<span class="inline-block"><svg
                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                             fill="currentColor"
                                                             class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
@@ -784,80 +752,6 @@
                                                 d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
                                                 clip-rule="evenodd"></path>
                                         </svg></span></span></a></div>
-                    </div>
-                </section>
-                <section id="writing" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
-                    <div
-                        class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                        <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Writing</h2>
-                    </div>
-                    <div>
-                        <ul class="group/list">
-                            <li class="mb-12">
-                                <div
-                                    class="group relative grid grid-cols-8 gap-4 transition-all sm:items-center sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div
-                                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                                    </div><img alt="Telescope" loading="lazy" width="200" height="48" decoding="async"
-                                        data-nimg="1"
-                                        class="z-10 col-span-2 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2"
-                                        style="color:transparent"
-                                        srcset="/_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=640&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fwriting%2Falgolia-search.jpeg&amp;w=640&amp;q=75">
-                                    <div class="z-10 col-span-6">
-                                        <p class="-mt-1 text-sm font-semibold leading-6">2020</p>
-                                        <h3 class="-mt-1"><a
-                                                class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
-                                                href="https://upstatement.com/blog/integrating-algolia-search-with-wordpress-multisite/"
-                                                target="_blank" rel="noreferrer"
-                                                aria-label="Integrating Algolia Search with WordPress Multisite"><span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Integrating
-                                                    Algolia Search with WordPress<!-- --> <span
-                                                        class="inline-block">Multisite<svg
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                            fill="currentColor"
-                                                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                                            aria-hidden="true">
-                                                            <path fill-rule="evenodd"
-                                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                                                clip-rule="evenodd"></path>
-                                                        </svg></span></span></a></h3>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-12">
-                                <div
-                                    class="group relative grid grid-cols-8 gap-4 transition-all sm:items-center sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                    <div
-                                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                                    </div><img alt="Headless horseamn" loading="lazy" width="200" height="48"
-                                        decoding="async" data-nimg="1"
-                                        class="z-10 col-span-2 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2"
-                                        style="color:transparent"
-                                        srcset="/_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=640&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fwriting%2Fheadless.jpeg&amp;w=640&amp;q=75">
-                                    <div class="z-10 col-span-6">
-                                        <p class="-mt-1 text-sm font-semibold leading-6">2019</p>
-                                        <h3 class="-mt-1"><a
-                                                class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
-                                                href="https://upstatement.com/blog/building-a-headless-mobile-app-cms-from-scratch/"
-                                                target="_blank" rel="noreferrer"
-                                                aria-label="Building a Headless Mobile App CMS From Scratch"><span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Building
-                                                    a Headless Mobile App CMS From<!-- --> <span
-                                                        class="inline-block">Scratch<svg
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                            fill="currentColor"
-                                                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                                            aria-hidden="true">
-                                                            <path fill-rule="evenodd"
-                                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                                                clip-rule="evenodd"></path>
-                                                        </svg></span></span></a></h3>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </section>
                 <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
