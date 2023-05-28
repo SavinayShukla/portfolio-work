@@ -9,27 +9,6 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                fontFamily: {
-                    'sans': ["'Inter'"],
-                    'mono': [Menlo],
-                }
-            }
-        }
-    </script>
-    <style>
-        :root {
-            font-family: 'Inter', sans-serif;
-        }
-
-        @supports (font-variation-settings: normal) {
-            :root {
-                font-family: 'Inter var', sans-serif;
-            }
-        }
-    </style>
     <title>It's Savinay</title>
 </head>
 
@@ -38,12 +17,13 @@
         <div class="lg:flex lg:justify-between lg:gap-4">
             <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
                 <div>
-                    <h3 class="antialiased font-mono text-teal-300">Hi! My name is <br></h3>
-                    <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Savinay Shukla</h1>
-                    <h2 id="element" class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"></h2>
-                    <p class="mt-4 max-w-xs leading-normal">“Study hard what interests you the most in the most
-                        undisciplined, irreverent and original manner possible.”
-                        <br>― Richard Feynmann
+                    <h2 class="antialiased font-mono text-teal-300">Hi! My name is <br></h2>
+                    <h1 class="text-4xl pb-3 font-bold tracking-tight text-slate-200 sm:text-5xl">Savinay Shukla</h1>
+                    <h2 id="element" class="inline mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+                    </h2>
+                    <p class="mt-4 max-w-xs leading-normal"><i>“Study hard what interests you the most in the most
+                        undisciplined, irreverent and original manner possible.”</i>
+                        <br> ― <b>Richard Feynmann</b>
                     </p>
                     <nav class="nav hidden lg:block">
                         <ul class="mt-16 w-max">
@@ -74,42 +54,25 @@
                             </li>
                         </ul>
                     </nav>
-                    <ul class="ml-1 mt-8 flex items-center">
-                        <li class="mr-5 text-xs">
-                            <a class="block hover:text-slate-200" href="#">
-                                <span class="sr-only">IG</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                    class="h-6 w-6" aria-hidden="true">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="mr-5 text-xs">
-                            <a class="block hover:text-slate-200" href="#">
-                                <span class="sr-only">IG</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                    class="h-6 w-6" aria-hidden="true">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="mr-5 text-xs">
-                            <a class="block hover:text-slate-200" href="#">
-                                <span class="sr-only">IG</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                    class="h-6 w-6" aria-hidden="true">
-                                    <path
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
+                <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
+                    <li class="mr-5 text-xs"><a class="block hover:text-teal-400"
+                            href="https://github.com/SavinayShukla" target="_blank" rel="noreferrer"><span
+                                class="sr-only">GitHub</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="currentColor" class="h-6 w-6" aria-hidden="true">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                                </path>
+                            </svg></a></li>
+                    <li class="mr-5 text-xs"><a class="block hover:text-teal-400"
+                            href="https://www.linkedin.com/in/savinayshukla/" target="_blank" rel="noreferrer"><span
+                                class="sr-only">LinkedIn</span><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6" aria-hidden="true">
+                                <path
+                                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                                </path>
+                            </svg></a></li>
+                </ul>
             </header>
             <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
                 <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
@@ -159,7 +122,10 @@
                             Time seemed to fly by, and now, in the year 2023,
                             I find myself in the bustling city of New York, driven to expand my skill set and knowledge
                             even further.
-                            Currently, I am pursuing a <b>Master's degree at NYU in Computer Engineering</b>, immersing
+                            Currently, I am pursuing a <b>Master's degree at <a href="https://engineering.nyu.edu/"
+                                class="hover:text-teal-300 focus-visible:text-teal-300"
+                                target="_blank" rel="noreferrer">New York University</a>
+                                in Computer Engineering</b>, immersing
                             myself in advanced technologies
                             and embracing the challenges and opportunities that lie ahead.
                         </p>
@@ -508,7 +474,8 @@
                         </ol>
                         <div class="mt-12"><a
                                 class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
-                                aria-label="View Full Résumé" target="_blank" href="assets/SavinayShuklaResume.pdf" ><span><span
+                                aria-label="View Full Résumé" target="_blank"
+                                href="assets/SavinayShuklaResume.pdf"><span><span
                                         class="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View
                                         Full<!-- --> </span><span class="whitespace-nowrap"><span
                                             class="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">Résumé</span><svg
@@ -586,8 +553,8 @@
                                 </div> -->
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
-                                        class="rounded transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                        style="color:transparent" src="assets/D2.gif">
+                                        class="rounded shadow-xl transition group-hover:border-slate-200/30 group-hover:shadow-teal-500/20 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        style="color:transparent" src="assets/D2Cropped.gif">
 
                                 </div>
                             </li>
@@ -599,8 +566,8 @@
                                     </div>
                                     <div class="z-10 sm:order-2 sm:col-span-6">
                                         <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                                href="https://github.com/SavinayShukla/Lightweight-Resnets-with-SE" target="_blank"
-                                                rel="noreferrer" aria-label="Spotify Profile"><span
+                                                href="https://github.com/SavinayShukla/Lightweight-Resnets-with-SE"
+                                                target="_blank" rel="noreferrer" aria-label="Spotify Profile"><span
                                                     class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Lighweight
                                                     ResNets with Squeeze and Excitation<span class="inline-block"><svg
                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -648,7 +615,7 @@
                                         </ul>
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
-                                        class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        class="rounded shadow-xl transition group-hover:border-slate-200/30 group-hover:shadow-teal-500/20 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                         style="color:transparent" src="assets/resnet.gif">
                                 </div>
                             </li>
@@ -660,8 +627,8 @@
                                     </div>
                                     <div class="z-10 sm:order-2 sm:col-span-6">
                                         <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                                href="https://github.com/SavinayShukla/ClearView-Lightweight-Dehazenet" target="_blank"
-                                                rel="noreferrer" aria-label="Spotify Profile"><span
+                                                href="https://github.com/SavinayShukla/ClearView-Lightweight-Dehazenet"
+                                                target="_blank" rel="noreferrer" aria-label="Spotify Profile"><span
                                                     class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>ClearView
                                                     - Depth-wise Seperable CNNs<span class="inline-block"><svg
                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -675,18 +642,10 @@
                                         <p class="mt-2 text-sm leading-normal">Our approach employs depth-wise separable
                                             convolutional layers and self-regularized activation functions to
                                             effectively clean hazy images and can be integrated with segmentation models
-                                            for enhanced performance. We believe that our approach will be particularly
+                                            for enhanced performance. <br><br>
+                                            We believe that our approach will be particularly
                                             useful for memory- bound systems already confined by heavy segmentation
-                                            models when dealing with obscured environments. </p><a
-                                            class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                                            href="https://github.com/bchiang7/spotify-profile" target="_blank"
-                                            rel="noreferrer" aria-label="544 stars on GitHub"><svg
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                fill="currentColor" class="mr-1 h-3 w-3" aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg><span>544</span></a>
+                                            models when dealing with obscured environments.
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-1.5 mt-2">
                                                 <div
@@ -711,7 +670,7 @@
                                         </ul>
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
-                                        class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        class="rounded shadow-xl transition group-hover:border-slate-200/30 group-hover:shadow-teal-500/20 sm:order-1 sm:col-span-2 sm:translate-y-1"
                                         style="color:transparent" src="assets/depthwise.gif">
                                 </div>
                             </li>
@@ -740,16 +699,7 @@
                                             Leveraging the power of <b>ARM Cortex-M4</b> and <b>BNO055</b> Orientation
                                             Sensor, designed a real-time embedded system on a <b>STM32 Discovery</b>
                                             board to detect breathing anomalies of patients.
-                                        </p><a
-                                            class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                                            href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer"
-                                            aria-label="6260 stars on GitHub"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor" class="mr-1 h-3 w-3"
-                                                aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg><span>6,260</span></a>
+                                        </p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-1.5 mt-2">
                                                 <div
@@ -774,8 +724,8 @@
                                         </ul>
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
-                                        class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                        style="color:transparent" src="assets/rtes.png">
+                                        class="rounded shadow-xl transition group-hover:border-slate-200/30 group-hover:shadow-teal-500/20 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        style="color:transparent" src="assets/rtes2.png">
                                 </div>
                             </li>
                             <li class="mb-12">
@@ -786,8 +736,8 @@
                                     </div>
                                     <div class="z-10 sm:order-2 sm:col-span-6">
                                         <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                                href="https://github.com/SavinayShukla/C-match-alpha" target="_blank" rel="noreferrer"
-                                                aria-label="brittanychiang.com (v4)"><span
+                                                href="https://github.com/SavinayShukla/C-match-alpha" target="_blank"
+                                                rel="noreferrer" aria-label="brittanychiang.com (v4)"><span
                                                     class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>C-Match
                                                     - Real-Time Score Tracking<!-- -->
                                                     <span class="inline-block"><svg xmlns="http://www.w3.org/2000/svg"
@@ -798,20 +748,15 @@
                                                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                                                 clip-rule="evenodd"></path>
                                                         </svg></span></span></a></h3>
-                                        <p class="mt-2 text-sm leading-normal">A <b>Microservice-based</b> web application built using <b>Angular, Spring
-                                            Boot, MySQL, MongoDB, and Docker.</b> Enables users to stay updated with live
-                                            cricket scores and statistics in real-time. The application provides a
-                                            responsive and interactive user interface using Angular Material. 
-                                            <b>Dockerization</b> ensures easy deployment and scalability. </p><a
-                                            class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                                            href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer"
-                                            aria-label="6260 stars on GitHub"><svg xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor" class="mr-1 h-3 w-3"
-                                                aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                                                    clip-rule="evenodd"></path>
-                                            </svg><span>6,260</span></a>
+                                        <p class="mt-2 text-sm leading-normal">A <b>Microservice-based</b> web
+                                            application built using <b>Angular, Spring
+                                                Boot, MySQL, MongoDB, and Docker.</b> Enables users to stay updated with
+                                            live
+                                            cricket scores and statistics in real-time. 
+                                            <br><br>The application provides a
+                                            responsive and interactive user interface using Angular Material.
+                                            <b>Dockerization</b> ensures easy deployment and scalability.
+                                        </p>
                                         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
                                             <li class="mr-1.5 mt-2">
                                                 <div
@@ -831,9 +776,8 @@
                                         </ul>
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
-                                        class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                        style="color:transparent"
-                                        src="assets/crick.png">
+                                        class="rounded shadow-xl transition group-hover:border-slate-200/30 group-hover:shadow-teal-500/20 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        style="color:transparent" src="assets/crick.png">
                                 </div>
                             </li>
                             <li class="mb-12">
@@ -844,9 +788,10 @@
                                     </div>
                                     <div class="z-10 sm:order-2 sm:col-span-6">
                                         <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                                href="https://github.com/SavinayShukla/C-match-alpha" target="_blank" rel="noreferrer"
-                                                aria-label="brittanychiang.com (v4)"><span
-                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Market Watcher - Recommendation Engine<!-- -->
+                                                href="https://github.com/SavinayShukla/C-match-alpha" target="_blank"
+                                                rel="noreferrer" aria-label="brittanychiang.com (v4)"><span
+                                                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Market
+                                                    Watcher - Recommendation Engine<!-- -->
                                                     <span class="inline-block"><svg xmlns="http://www.w3.org/2000/svg"
                                                             viewBox="0 0 20 20" fill="currentColor"
                                                             class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
@@ -855,9 +800,12 @@
                                                                 d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
                                                                 clip-rule="evenodd"></path>
                                                         </svg></span></span></a></h3>
-                                        <p class="mt-2 text-sm leading-normal">Developed a stock market recommendation engine using <b>Pandas</b> and <b>Keras.</b>
-                                            Incorporated global market indices and technical indicators as prominent features to reduce prediction errors.
-                                            Optimized engine across 300+ BSE companies, resulting in reduced prediction losses of up to 2%.</p><a
+                                        <p class="mt-2 text-sm leading-normal">Developed a stock market recommendation
+                                            engine using <b>Pandas</b> and <b>Keras.</b>
+                                            Incorporated global market indices and technical indicators as prominent
+                                            features to reduce prediction errors.
+                                            Optimized engine across 300+ BSE companies, resulting in reduced prediction
+                                            losses of up to 2%.</p><a
                                             class="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
                                             href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer"
                                             aria-label="6260 stars on GitHub"><svg xmlns="http://www.w3.org/2000/svg"
@@ -891,33 +839,31 @@
                                         </ul>
                                     </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
                                         data-nimg="1"
-                                        class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                        style="color:transparent"
-                                        src="assets/stock.png">
+                                        class="rounded shadow-xl transition group-hover:border-slate-200/30 group-hover:shadow-teal-500/20 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                                        style="color:transparent" src="assets/stock.png">
                                 </div>
                             </li>
                         </ul>
                 </section>
-                <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
-                    <p>Loosely designed in<!-- --> <a href="https://www.figma.com/"
+                <!-- <footer class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+                    <p>Loosely designed in <a href="https://www.figma.com/"
                             class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-                            target="_blank" rel="noreferrer">Figma</a> <!-- -->and coded in<!-- --> <a
+                            target="_blank" rel="noreferrer">Figma</a> and coded in <a
                             href="https://code.visualstudio.com/"
                             class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-                            target="_blank" rel="noreferrer">Visual Studio Code</a> <!-- -->by yours truly. Built
-                        with<!-- --> <a href="https://nextjs.org/"
+                            target="_blank" rel="noreferrer">Visual Studio Code</a> by yours truly. Built
+                        with<a href="https://nextjs.org/"
                             class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-                            target="_blank" rel="noreferrer">Next.js</a> <!-- -->and<!-- --> <a
-                            href="https://tailwindcss.com/"
+                            target="_blank" rel="noreferrer">Next.js</a> and <a href="https://tailwindcss.com/"
                             class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-                            target="_blank" rel="noreferrer">Tailwind CSS</a>, deployed with<!-- --> <a
+                            target="_blank" rel="noreferrer">Tailwind CSS</a>, deployed with <a
                             href="https://vercel.com/"
                             class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-                            target="_blank" rel="noreferrer">Vercel</a>. All text is set in the<!-- --> <a
+                            target="_blank" rel="noreferrer">Vercel</a>. All text is set in the <a
                             href="https://rsms.me/inter/"
                             class="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-                            target="_blank" rel="noreferrer">Inter</a> <!-- -->typeface.</p>
-                </footer>
+                            target="_blank" rel="noreferrer">Inter</a> typeface.</p>
+                </footer> -->
             </main>
         </div>
     </div>
@@ -925,16 +871,16 @@
 <script>
     var typed = new Typed('#element', {
         strings: ['Graduate Student @ NYU',
-            '"  . . . <i>Never stop learning!</i>"',
-            "Installed my first OS at the age of 8!",
+            '"  . . . <i>Never stop learning!</i> "',
+            'Installed my first OS at the age of 8!',
             '#deepLearning #artificialIntelligence',
             'I make my day better by cooking!',
-            "Do you like pizza?"],
+            'Do you like pizza?'],
         typeSpeed: 50,
         loop: true,
-        backSpeed: 10,
         backDelay: 3000,
-        fadeOut: true
+        showCursor: true,
+        fadeOut: true,
     });
 </script>
 
